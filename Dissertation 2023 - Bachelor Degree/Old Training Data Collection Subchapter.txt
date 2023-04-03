@@ -1,0 +1,48 @@
+\section{Training Dataset}
+
+\subsection{Overview}
+
+The football tweets sentiment dataset used to train the models was obtained from an open-source GitHub repository that maintains a comprehensive collective of football-related Twitter tweets \cite{malafosse_2023_open}. This repository includes three distinct files that focuses on football-related tweets, player tweets, and tweets about the World Cup with their respective sentiment about each tweet. The availability of such a diverse range of data makes it a valuable resource for researches seeking to study sentiment analysis in the context of football tweets. It is worth noting that studies utilizing this dataset are limited, indicating its potential for new research opportunities.
+
+The repository has multiple languages available which include Spanish , Italian, German and French football-related tweets. For these tweets, translation to English was done using Google Translate, followed by analysis with AWS Comprehend. Amazon Comprehend is a natural-language processing (NLP) service that uses machine learning to uncover valuable insights and connections in text \cite{villalba_2022_new}. As our research centers solely on football-teams sentiment, we amalgamated the datasets of both teams and players to constitute the training dataset. 
+
+\subsection{Data Manipulation}
+
+The dataset included several fields such as tweet create date, tweet id, tweet text, language, and sentiment score. Given the study's exclusive focus on predicting tweet sentiment as either positive, negative, or neutral, the tweet creation date and sentiment score fields were deemed extraneous, as they will not be utilized in training the model, and subsequently expunged from the dataset. Upon compiling the two datasets together, the tweet id field was utilized to identify and subsequently remove 762,643 duplicate tweets, in accordance with the standard data cleaning procedure. After removing the duplicate tweets, we proceeded to eliminate the column containing the tweet id, as it became obsolete and served no further purpose in our analysis.
+
+In order to ensure the effectiveness of our sentiment analysis model, a language check was conducted to confirm that all tweets in the dataset were written in English, as the model was designed to exclusively analyze English-language text. The language check performed ensured that only 'en' values were retained in the 'language' column.  Upon inspecting the sentiment analysis categories of the dataset, it was observed that there were four categories, namely positive, negative, neutral, and mixed. However, due to the relatively small number of tweets assigned to the mixed category, it was determined that down-sampling it would not be feasible, and therefore opted to remove the mixed category from the dataset during the data cleaning stage. This action was deemed necessary to maintain the integrity of our analysis and avoid potential inaccuracies in the model training and evaluation process.
+
+As has been previously noted in the work by \cite{meth1}, the size of the dataset is systematically reduced and adjusted at each stage of the pre-processing pipeline, thereby facilitating the training of the model. The steps aimed to process the tweets by removing redundant words and abbreviations \cite{rebane_2023_top}, correcting contractions and removing unwanted patterns such as URLs, usernames, and punctuation's, hashtags and at the beginning and end of the text. This is achieved by utilizing regular expressions and predefined patterns, such as 'urlPattern' and 'userPattern,' to identify and replace the target text elements. The presented table illustrates the size reduction of the data file subsequent to each pre-processing stage. This reduction and data refinement process enables optimal performance and precision for other natural language processing tasks. \\
+
+\begin{table}[ht]
+\begin{tabular}{ |p{5cm}|p{3cm}|p{3.5cm} |}
+\hline
+\multicolumn{3}{|c|}{Dataset Sizes} \\
+\hline
+\textbf{Pre-processing Tasks}& \textbf{File Size (MB)} &\textbf{Processing Time (s)} \\
+\hline
+Before pre-processing & 734.2 &NA \\
+After removing URLs & 699.5   & 42.3 \\
+Removing of mentions "@" &585.6 & 57.7 \\
+Filtering \# from tweets  &544.0 & 50.2 \\
+Removing punctuation's & 523.3 & 62.7 \\
+\hline
+\end{tabular}\\
+\caption{Data Refinement Process}\\
+\end{table}
+
+A lambda function is used to split each tweet into a list of tokens. Then, a CountVectorizer object is used from the Scikit-learn library to generate a matrix of word counts for each tweet. This resulting matrix of word counts represents the frequency of occurrence of each word in the dataset. To prepare the text for vectorization, the nltk.tokenize RegexpTokenizer is used to split the text into tokens based on alphanumeric characters. Stop words, which are common words that do not carry much meaning in the context of the text, are removed by setting the stop words parameter of the CountVectorizer object to 'english'. 
+
+\begin{table}[ht]
+\begin{tabular}{ |p{8cm}|p{7cm}|}
+\hline
+\textbf{Before pre-processing Tasks}& \textbf{After pre-processing Tasks} \\
+\hline
+I have to agree with \#Lovren he has become one of the best defenders in the world but can he keep it up I hope he can \#LFC \@DejanLovren & i have to agree with he has become one of the best defenders in the world but can he keep it up i hope he can \\\\
+I hate supporting \@NUFC while Mike Ashley owns the club. It has ruined football and my love of the sport year after year. \#NUFC & i hate supporting while mike ashley owns the club it has ruined football and my love of the sport year after year \\\\
+Why haven't we signed anyone in almost 24 hours. This is a shambles. \#cpfc	&why havent we signed anyone in almost 24 hours this is a shambles \\\\
+\hline
+\end{tabular} 
+\caption{Table to show the tweets before and after processing}
+\label{table:ta}\\
+\end{table}
