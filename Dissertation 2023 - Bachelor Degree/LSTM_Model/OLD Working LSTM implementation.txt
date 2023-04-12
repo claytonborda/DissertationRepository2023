@@ -1,0 +1,121 @@
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, Dataset, TensorDataset
+from torch.autograd import Variable
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report, confusion_matrix
+
+# Load GloVe embeddings
+def load_glove_embeddings(file_path, embedding_dim, word_index, max_features):
+    embeddings_index = {}
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            values = line.split()
+            word = values[0]
+            coefs = np.asarray(values[1:], dtype='float32')
+            embeddings_index[word] = coefs
+    
+    embedding_matrix = np.zeros((max_features, embedding_dim))
+    for word, i in word_index.items():
+        if i >= max_features:
+            continue
+        embedding_vector = embeddings_index.get(word)
+        if embedding_vector is not None:
+            embedding_matrix[i] = embedding_vector
+    return torch.tensor(embedding_matrix, dtype=torch.float32)
+
+# Load the GloVe embeddings matrix
+glove_file_path = 'glove.twitter.27B.200d.txt'  # Update the path to the downloaded GloVe file
+embedding_dim = 200
+embedding_matrix = load_glove_embeddings(glove_file_path, embedding_dim, tokenizer.word_index, max_features)
+
+class CNNTLSTM(nn.Module):
+    def __init__(self, embedding_matrix, embed_dim=200, lstm_out=256, dropout_rate=0.4, num_classes=3, num_filters=64, filter_size=5, pool_size=2):
+        super(CNNTLSTM, self).__init__()
+        self.embedding = nn.Embedding.from_pretrained(embedding_matrix, freeze=True)
+        self.conv1d = nn.Conv1d(embed_dim, num_filters, filter_size)
+        self.relu = nn.ReLU()
+        self.max_pool1d = nn.MaxPool1d(pool_size)
+        self.bi_lstm = nn.LSTM(num_filters, lstm_out // 2, batch_first=True, bidirectional=True, dropout=dropout_rate)
+        self.dropout = nn.Dropout(dropout_rate)
+        self.fc = nn.Linear(lstm_out, num_classes)
+        self.softmax = nn.Softmax(dim=1)
+
+    def forward(self, x):
+        x = self.embedding(x)
+        x = x.permute(0, 2, 1)
+        x = self.conv1d(x)
+        x = self.relu(x)
+        x = self.max_pool1d(x)
+        x = x.permute(0, 2, 1)
+        x, _ = self.bi_lstm(x)
+        x = x[:, -1, :]
+        x = self.dropout(x)
+        x = self.fc(x)
+        return self.softmax(x)
+
+# Prepare data for PyTorch
+X_train_torch = torch.tensor(X_train, dtype=torch.long)
+y_train_torch = torch.tensor(y_train, dtype=torch.long)
+X_test_torch = torch.tensor(X_test, dtype=torch.long)
+y_test_torch = torch.tensor(y_test, dtype=torch.long)
+
+# Initialize model, loss function and optimizer
+model = CNNTLSTM(embedding_matrix).cuda()
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters())
+
+# Train the model
+num_epochs = 5
+batch_size = 128
+
+train_dataset = TensorDataset(X_train_torch, y_train_torch)
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+
+accumulation_steps = 4  # Adjust this value based on your GPU memory capacity
+
+for epoch in range(num_epochs):
+    running_loss = 0.0
+    for i, (texts, labels) in enumerate(train_loader):
+        texts, labels = texts.cuda(), labels.cuda()
+
+        # Forward pass
+        outputs = model(texts)
+        loss = criterion(outputs, labels) / accumulation_steps
+
+        # Backward and optimize
+        loss.backward()
+        if (i + 1) % accumulation_steps == 0:
+            optimizer.step()
+            optimizer.zero_grad()
+
+        running_loss += loss.item() * accumulation_steps
+
+        if (i + 1) % 10 == 0:
+            print(f"Epoch [{epoch + 1}/{num_epochs}], Step [{i + 1}/{len(train_loader)}], Loss: {loss.item():.4f}")
+
+# Evaluate the model on the test set
+model.eval()
+test_dataset = TensorDataset(X_test_torch, y_test_torch)
+test_loader = DataLoader(test_dataset, batch_size=128, shuffle=False)  # Set a smaller batch size for test data
+
+total_correct = 0 
+total_samples = 0
+
+all_predictions = []
+all_labels = []
+
+with torch.no_grad():
+    for texts, labels in test_loader:
+        texts, labels = texts.cuda(), labels.cuda()
+        test_outputs = model(texts)
+        _, predicted = torch.max(test_outputs.data, 1)
+        all_predictions.extend(predicted.cpu().numpy())
+        all_labels.extend(labels.cpu().numpy())
+        total_correct += (predicted == labels).sum().item()
+        total_samples += labels.size(0)
+
+test_accuracy = total_correct / total_samples
+print(f"Test accuracy: {test_accuracy:.4f}")

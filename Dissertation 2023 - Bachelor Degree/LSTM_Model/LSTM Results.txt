@@ -1,0 +1,109 @@
+[I 2023-04-07 21:51:19,030] A new study created in memory with name: no-name-07bf6876-2ae8-4f1a-9871-b3e1eaecaaf7
+[I 2023-04-07 21:53:59,719] Trial 0 finished with value: 0.8497938420599809 and parameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}. Best is trial 0 with value: 0.8497938420599809.
+Validation accuracy: 0.8498 with hyperparameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}
+[I 2023-04-07 21:58:20,768] Trial 1 finished with value: 0.8116699028213313 and parameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}. Best is trial 0 with value: 0.8497938420599809.
+Validation accuracy: 0.8117 with hyperparameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-07 22:02:50,851] Trial 2 finished with value: 0.8158259716691506 and parameters: {'num_filters': 160.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}. Best is trial 0 with value: 0.8497938420599809.
+Validation accuracy: 0.8158 with hyperparameters: {'num_filters': 160.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-07 22:12:04,529] Trial 3 finished with value: 0.8115570683729743 and parameters: {'num_filters': 128.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}. Best is trial 0 with value: 0.8497938420599809.
+Validation accuracy: 0.8116 with hyperparameters: {'num_filters': 128.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}
+[I 2023-04-07 22:18:24,991] Trial 4 finished with value: 0.8607434849859662 and parameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}. Best is trial 4 with value: 0.8607434849859662.
+Validation accuracy: 0.8607 with hyperparameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}
+[I 2023-04-07 22:24:10,653] Trial 5 finished with value: 0.8344906700015515 and parameters: {'num_filters': 32.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}. Best is trial 4 with value: 0.8607434849859662.
+Validation accuracy: 0.8345 with hyperparameters: {'num_filters': 32.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-07 22:27:15,553] Trial 6 finished with value: 0.8579226237770391 and parameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.30000000000000004}. Best is trial 4 with value: 0.8607434849859662.
+Validation accuracy: 0.8579 with hyperparameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-07 22:30:21,423] Trial 7 finished with value: 0.7819662342913292 and parameters: {'num_filters': 32.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}. Best is trial 4 with value: 0.8607434849859662.
+Validation accuracy: 0.7820 with hyperparameters: {'num_filters': 32.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}
+[I 2023-04-07 22:34:18,009] Trial 8 finished with value: 0.7855769366387558 and parameters: {'num_filters': 32.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}. Best is trial 4 with value: 0.8607434849859662.
+Validation accuracy: 0.7856 with hyperparameters: {'num_filters': 32.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}
+[I 2023-04-07 22:44:52,649] Trial 9 finished with value: 0.8385386058363619 and parameters: {'num_filters': 64.0, 'filter_size': 5.0, 'pool_size': 4.0, 'lstm_out': 320.0, 'dropout_rate': 0.30000000000000004}. Best is trial 4 with value: 0.8607434849859662.
+Validation accuracy: 0.8385 with hyperparameters: {'num_filters': 64.0, 'filter_size': 5.0, 'pool_size': 4.0, 'lstm_out': 320.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-07 23:05:48,858] Trial 10 finished with value: 0.8600523739897791 and parameters: {'num_filters': 256.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.5}. Best is trial 4 with value: 0.8607434849859662.
+Validation accuracy: 0.8601 with hyperparameters: {'num_filters': 256.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.5}
+[I 2023-04-07 23:26:46,700] Trial 11 finished with value: 0.8617119806676978 and parameters: {'num_filters': 256.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.5}. Best is trial 11 with value: 0.8617119806676978.
+Validation accuracy: 0.8617 with hyperparameters: {'num_filters': 256.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.5}
+[I 2023-04-07 23:47:45,081] Trial 12 finished with value: 0.8599724495888594 and parameters: {'num_filters': 256.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.5}. Best is trial 11 with value: 0.8617119806676978.
+Validation accuracy: 0.8600 with hyperparameters: {'num_filters': 256.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.5}
+[I 2023-04-08 00:08:27,661] Trial 13 finished with value: 0.8635643461948933 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 13 with value: 0.8635643461948933.
+Validation accuracy: 0.8636 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+[I 2023-04-08 00:29:20,645] Trial 14 finished with value: 0.866197149989892 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8662 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+[I 2023-04-08 00:50:02,982] Trial 15 finished with value: 0.8594646945712526 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8595 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+[I 2023-04-08 00:53:43,514] Trial 16 finished with value: 0.8562442113577275 and parameters: {'num_filters': 128.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8562 with hyperparameters: {'num_filters': 128.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.1}
+[I 2023-04-08 00:56:21,428] Trial 17 finished with value: 0.8600335682483863 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 64.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8600 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 64.0, 'dropout_rate': 0.1}
+[I 2023-04-08 01:02:27,155] Trial 18 finished with value: 0.8652286543081603 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8652 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+[I 2023-04-08 01:07:32,055] Trial 19 finished with value: 0.8505883846338287 and parameters: {'num_filters': 96.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8506 with hyperparameters: {'num_filters': 96.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+[I 2023-04-08 01:13:14,701] Trial 20 finished with value: 0.8607669921627072 and parameters: {'num_filters': 160.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8608 with hyperparameters: {'num_filters': 160.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+[I 2023-04-08 01:19:20,852] Trial 21 finished with value: 0.857964936695173 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8580 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}
+[I 2023-04-08 01:34:22,319] Trial 22 finished with value: 0.857452480242218 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8575 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}
+[I 2023-04-08 01:40:42,060] Trial 23 finished with value: 0.8651017155537586 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8651 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+[I 2023-04-08 01:46:57,879] Trial 24 finished with value: 0.8587688821397172 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8588 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+[I 2023-04-08 01:53:16,519] Trial 25 finished with value: 0.8572456170868966 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.4}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8572 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.4}
+[I 2023-04-08 01:59:33,534] Trial 26 finished with value: 0.8615991462193408 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8616 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+[I 2023-04-08 02:14:34,449] Trial 27 finished with value: 0.8598455108344577 and parameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8598 with hyperparameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}
+[I 2023-04-08 02:34:53,143] Trial 28 finished with value: 0.8552287013225137 and parameters: {'num_filters': 160.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8552 with hyperparameters: {'num_filters': 160.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.2}
+[I 2023-04-08 02:37:25,247] Trial 29 finished with value: 0.8596386476791364 and parameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8596 with hyperparameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}
+[I 2023-04-08 02:42:22,462] Trial 30 finished with value: 0.8572362142162002 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8572 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}
+[I 2023-04-08 03:03:05,664] Trial 31 finished with value: 0.8611807184733499 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8612 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+[I 2023-04-08 03:09:13,060] Trial 32 finished with value: 0.8657975279852939 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8658 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}
+[I 2023-04-08 03:15:03,688] Trial 33 finished with value: 0.8635831519362861 and parameters: {'num_filters': 192.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8636 with hyperparameters: {'num_filters': 192.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}
+[I 2023-04-08 03:19:06,316] Trial 34 finished with value: 0.8194930912407558 and parameters: {'num_filters': 192.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8195 with hyperparameters: {'num_filters': 192.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.1}
+[I 2023-04-08 03:25:49,166] Trial 35 finished with value: 0.8659432724810885 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8659 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}
+[I 2023-04-08 03:32:18,999] Trial 36 finished with value: 0.8582799328635032 and parameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8583 with hyperparameters: {'num_filters': 224.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-08 03:36:21,229] Trial 37 finished with value: 0.814260393698196 and parameters: {'num_filters': 192.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8143 with hyperparameters: {'num_filters': 192.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}
+[I 2023-04-08 03:42:18,238] Trial 38 finished with value: 0.8545610975030676 and parameters: {'num_filters': 160.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8546 with hyperparameters: {'num_filters': 160.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-08 03:47:28,635] Trial 39 finished with value: 0.8547303491756033 and parameters: {'num_filters': 128.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8547 with hyperparameters: {'num_filters': 128.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}
+[I 2023-04-08 03:55:59,787] Trial 40 finished with value: 0.8571045740264502 and parameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 4.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}. Best is trial 14 with value: 0.866197149989892.
+Validation accuracy: 0.8571 with hyperparameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 4.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}
+[I 2023-04-08 04:02:17,204] Trial 41 finished with value: 0.8668788581153827 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8669 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+[I 2023-04-08 04:08:59,662] Trial 42 finished with value: 0.8667237107488917 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8667 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}
+[I 2023-04-08 04:15:40,946] Trial 43 finished with value: 0.8622244371206529 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8622 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-08 04:22:23,010] Trial 44 finished with value: 0.8649982839760979 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8650 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}
+[I 2023-04-08 04:28:48,489] Trial 45 finished with value: 0.8597890936102792 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.1}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8598 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.1}
+[I 2023-04-08 04:35:29,403] Trial 46 finished with value: 0.8637712093502147 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8638 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-08 04:57:47,500] Trial 47 finished with value: 0.8433246670208414 and parameters: {'num_filters': 64.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8433 with hyperparameters: {'num_filters': 64.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+[I 2023-04-08 05:04:04,764] Trial 48 finished with value: 0.86091743809385 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.30000000000000004}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8609 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-08 05:10:46,314] Trial 49 finished with value: 0.8603861758995022 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}. Best is trial 41 with value: 0.8668788581153827.
+Validation accuracy: 0.8604 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.2}
+Best trial:
+  Value:  0.8668788581153827
+  Params: 
+    num_filters: 256.0
+    filter_size: 7.0
+    pool_size: 2.0
+    lstm_out: 448.0
+    dropout_rate: 0.2
