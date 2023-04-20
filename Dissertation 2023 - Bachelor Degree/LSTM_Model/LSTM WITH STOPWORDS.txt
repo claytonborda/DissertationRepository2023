@@ -1,0 +1,515 @@
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+[I 2023-04-15 20:43:17,878] A new study created in memory with name: no-name-07f02b22-6b0b-45e6-b6c8-aa733a96076c
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 20:47:33,810] Trial 0 finished with value: 0.7961009246199655 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.2}. Best is trial 0 with value: 0.7961009246199655.
+Validation accuracy: 0.7961 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.30000000000000004 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 20:50:02,408] Trial 1 finished with value: 0.7987588152327222 and parameters: {'num_filters': 160.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.30000000000000004}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7988 with hyperparameters: {'num_filters': 160.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.30000000000000004}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.4 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 20:52:15,942] Trial 2 finished with value: 0.7253847359348065 and parameters: {'num_filters': 128.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7254 with hyperparameters: {'num_filters': 128.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.4 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 20:55:36,991] Trial 3 finished with value: 0.7270208431280364 and parameters: {'num_filters': 160.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.4}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7270 with hyperparameters: {'num_filters': 160.0, 'filter_size': 7.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.4}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 20:57:44,067] Trial 4 finished with value: 0.7960382385206081 and parameters: {'num_filters': 96.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.2}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7960 with hyperparameters: {'num_filters': 96.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.30000000000000004 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:00:07,347] Trial 5 finished with value: 0.7959065977119574 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 64.0, 'dropout_rate': 0.30000000000000004}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7959 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 64.0, 'dropout_rate': 0.30000000000000004}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.4 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:03:34,804] Trial 6 finished with value: 0.798144491459019 and parameters: {'num_filters': 160.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7981 with hyperparameters: {'num_filters': 160.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.4 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:10:11,953] Trial 7 finished with value: 0.7937501958940605 and parameters: {'num_filters': 64.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7938 with hyperparameters: {'num_filters': 64.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.4}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.30000000000000004 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:13:15,270] Trial 8 finished with value: 0.7292211252154834 and parameters: {'num_filters': 64.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 192.0, 'dropout_rate': 0.30000000000000004}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7292 with hyperparameters: {'num_filters': 64.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 192.0, 'dropout_rate': 0.30000000000000004}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:15:23,872] Trial 9 finished with value: 0.797994044820561 and parameters: {'num_filters': 128.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.2}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7980 with hyperparameters: {'num_filters': 128.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:18:44,677] Trial 10 finished with value: 0.73242438489265 and parameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.1}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7324 with hyperparameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 512.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.30000000000000004 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:36:23,026] Trial 11 finished with value: 0.7960194326908008 and parameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.30000000000000004}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7960 with hyperparameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.30000000000000004}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.4 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:38:12,148] Trial 12 finished with value: 0.7982824008776054 and parameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 64.0, 'dropout_rate': 0.4}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7983 with hyperparameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 64.0, 'dropout_rate': 0.4}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.30000000000000004 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:40:13,666] Trial 13 finished with value: 0.7984579219558063 and parameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 64.0, 'dropout_rate': 0.30000000000000004}. Best is trial 1 with value: 0.7987588152327222.
+Validation accuracy: 0.7985 with hyperparameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 64.0, 'dropout_rate': 0.30000000000000004}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.30000000000000004 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:42:25,101] Trial 14 finished with value: 0.8016987932925874 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.30000000000000004}. Best is trial 14 with value: 0.8016987932925874.
+Validation accuracy: 0.8017 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.30000000000000004}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:44:34,897] Trial 15 finished with value: 0.8006832784829964 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}. Best is trial 14 with value: 0.8016987932925874.
+Validation accuracy: 0.8007 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:46:45,132] Trial 16 finished with value: 0.8040745964582354 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}. Best is trial 16 with value: 0.8040745964582354.
+Validation accuracy: 0.8041 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 21:48:28,769] Trial 17 finished with value: 0.7304999216423758 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}. Best is trial 16 with value: 0.8040745964582354.
+Validation accuracy: 0.7305 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 128.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 22:06:40,771] Trial 18 finished with value: 0.804851904090268 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8049 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 22:24:52,608] Trial 19 finished with value: 0.8033975865851747 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8034 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 22:28:17,425] Trial 20 finished with value: 0.725767121140887 and parameters: {'num_filters': 32.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.7258 with hyperparameters: {'num_filters': 32.0, 'filter_size': 3.0, 'pool_size': 4.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 22:46:26,056] Trial 21 finished with value: 0.8023068484563548 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8023 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 23:04:33,836] Trial 22 finished with value: 0.8044695188841874 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8045 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 23:17:37,979] Trial 23 finished with value: 0.8041247453377214 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8041 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 23:30:40,922] Trial 24 finished with value: 0.8044507130543802 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8045 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 23:43:26,215] Trial 25 finished with value: 0.8027707255916 and parameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8028 with hyperparameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 23:48:28,443] Trial 26 finished with value: 0.8014417802852217 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8014 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-15 23:53:25,645] Trial 27 finished with value: 0.799899702241028 and parameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.7999 with hyperparameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 00:06:27,264] Trial 28 finished with value: 0.8027644569816643 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8028 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 00:24:34,463] Trial 29 finished with value: 0.7984453847359348 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.7984 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.2}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 00:37:09,218] Trial 30 finished with value: 0.7987400094029149 and parameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.7987 with hyperparameters: {'num_filters': 192.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 00:50:10,958] Trial 31 finished with value: 0.804851904090268 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8049 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 01:08:07,160] Trial 32 finished with value: 0.804356683905344 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8044 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 01:21:10,423] Trial 33 finished with value: 0.8047829493809747 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8048 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 01:26:14,245] Trial 34 finished with value: 0.8047829493809747 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8048 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 01:31:09,212] Trial 35 finished with value: 0.800890142610876 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8009 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 01:35:37,974] Trial 36 finished with value: 0.7972794232878859 and parameters: {'num_filters': 128.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.7973 with hyperparameters: {'num_filters': 128.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 512.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 01:38:58,428] Trial 37 finished with value: 0.7984516533458705 and parameters: {'num_filters': 256.0, 'filter_size': 5.0, 'pool_size': 4.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.7985 with hyperparameters: {'num_filters': 256.0, 'filter_size': 5.0, 'pool_size': 4.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 01:42:18,266] Trial 38 finished with value: 0.7984704591756778 and parameters: {'num_filters': 160.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.7985 with hyperparameters: {'num_filters': 160.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.1}
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:80: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  num_filters = int(trial.suggest_discrete_uniform("num_filters", 32, 256, 32))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:81: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  filter_size = int(trial.suggest_discrete_uniform("filter_size", 3, 7, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:82: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  pool_size = int(trial.suggest_discrete_uniform("pool_size", 2, 4, 2))
+C:\Users\clayt\AppData\Local\Temp\ipykernel_4724\3957003435.py:83: FutureWarning: suggest_discrete_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use :func:`~optuna.trial.Trial.suggest_float` instead.
+  lstm_out = int(trial.suggest_discrete_uniform("lstm_out", 64, 512, 64))
+c:\Users\clayt\anaconda3\envs\gpu-ienv\lib\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+[I 2023-04-16 01:45:15,344] Trial 39 finished with value: 0.7946027268453221 and parameters: {'num_filters': 96.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.2}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.7946 with hyperparameters: {'num_filters': 96.0, 'filter_size': 5.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.2}
+[I 2023-04-16 01:58:08,877] Trial 40 finished with value: 0.8010217834195267 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}. Best is trial 18 with value: 0.804851904090268.
+Validation accuracy: 0.8010 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}
+[I 2023-04-16 02:16:18,953] Trial 41 finished with value: 0.8054223475944209 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 41 with value: 0.8054223475944209.
+Validation accuracy: 0.8054 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+[I 2023-04-16 02:34:27,285] Trial 42 finished with value: 0.8024384892650055 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}. Best is trial 41 with value: 0.8054223475944209.
+Validation accuracy: 0.8024 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 384.0, 'dropout_rate': 0.1}
+[I 2023-04-16 02:39:30,911] Trial 43 finished with value: 0.8040934022880426 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}. Best is trial 41 with value: 0.8054223475944209.
+Validation accuracy: 0.8041 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.1}
+[I 2023-04-16 02:52:33,778] Trial 44 finished with value: 0.8049145901896254 and parameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}. Best is trial 41 with value: 0.8054223475944209.
+Validation accuracy: 0.8049 with hyperparameters: {'num_filters': 256.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}
+[I 2023-04-16 03:05:26,514] Trial 45 finished with value: 0.8036734054223476 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}. Best is trial 41 with value: 0.8054223475944209.
+Validation accuracy: 0.8037 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.2}
+[I 2023-04-16 03:08:54,534] Trial 46 finished with value: 0.7989217990910515 and parameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.1}. Best is trial 41 with value: 0.8054223475944209.
+Validation accuracy: 0.7989 with hyperparameters: {'num_filters': 192.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 256.0, 'dropout_rate': 0.1}
+[I 2023-04-16 03:21:55,499] Trial 47 finished with value: 0.7950289923209528 and parameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}. Best is trial 41 with value: 0.8054223475944209.
+Validation accuracy: 0.7950 with hyperparameters: {'num_filters': 256.0, 'filter_size': 7.0, 'pool_size': 2.0, 'lstm_out': 320.0, 'dropout_rate': 0.1}C:\Users\clayt\AppData\Local\Temp[I 2023-04-16 03:31:43,528] Trial 48 finished with value: 0.7969471869612913 and parameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 4.0, 'lstm_out': 384.0, 'dropout_rate': 0.30000000000000004}. Best is trial 41 with value: 0.8054223475944209.
+Validation accuracy: 0.7969 with hyperparameters: {'num_filters': 224.0, 'filter_size': 5.0, 'pool_size': 4.0, 'lstm_out': 384.0, 'dropout_rate': 0.30000000000000004}
+[I 2023-04-16 03:34:25,340] Trial 49 finished with value: 0.8039742986992634 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.2}. Best is trial 41 with value: 0.8054223475944209.
+
+Trial 51 finished with value:0.8023 and parameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 448.0, 'dropout_rate': 0.30000000000000004}.
+
+
+
+Validation accuracy: 0.8040 with hyperparameters: {'num_filters': 224.0, 'filter_size': 3.0, 'pool_size': 2.0, 'lstm_out': 192.0, 'dropout_rate': 0.2}
+Best trial:
+  Value:  0.8054223475944209
+  Params: 
+    num_filters: 256.0
+    filter_size: 3.0
+    pool_size: 2.0
+    lstm_out: 384.0
+    dropout_rate: 0.1

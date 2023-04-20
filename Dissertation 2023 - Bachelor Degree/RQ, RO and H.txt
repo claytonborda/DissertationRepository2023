@@ -1,0 +1,18 @@
+RQ1: How do different sentiment analysis models perform using Malafosse's football-related tweet data set? 
+RQ2: How do different stopword strategies (e.g., NLTK stopwords, customized stopwords, and no stopwords) impact the performance of machine learning and deep learning models in sentiment analysis football-related tasks?
+RQ3: Is there a significant relationship between the sentiment of tweets related to football matches and (a) changes in the league table standings on a monthly basis and (b) match results (win, loss, or draw) on a weekly basis?
+RQ4: How does the strength and direction of the relationships between tweet sentiment and football outcomes vary across different periods within a season?
+
+Research Objectives:
+
+To evaluate the performance of different sentiment analysis models on Malafosse's dataset and identify the best model based on accuracy, precision, recall, F1-score, and other evaluation metrics.
+To investigate the impact of various stopword strategies (NLTK stopwords, customized stopwords, and no stopwords) on the performance of machine learning and deep learning models in football-related sentiment analysis tasks.
+To examine the relationship between the sentiment of football-related tweets and (a) changes in the league table standings on a monthly basis, and (b) match results (win, loss, or draw) on a weekly basis.
+To explore the variation in strength and direction of the relationships between tweet sentiment and football outcomes across different periods within a season.
+Hypotheses:
+
+H1: The performance of sentiment analysis models will significantly differ when applied to Malafosse's football-related tweet dataset.
+H2: Different stopword strategies will have a significant impact on the performance of machine learning and deep learning models in football-related sentiment analysis tasks.
+H3a: There will be a significant relationship between the sentiment of football-related tweets and changes in the league table standings on a monthly basis.
+H3b: There will be a significant relationship between the sentiment of football-related tweets and match results (win, loss, or draw) on a weekly basis.
+H4: The strength and direction of the relationships between tweet sentiment and football outcomes will significantly vary across different periods within a season.
