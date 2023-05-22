@@ -2,6 +2,10 @@ RQ1: How do different sentiment analysis models perform using Malafosse's footba
 RQ2: How do different stopword strategies (e.g., NLTK stopwords, customized stopwords, and no stopwords) impact the performance of machine learning and deep learning models in sentiment analysis football-related tasks?
 RQ3: Is there a significant relationship between the sentiment of tweets related to football matches and (a) Points Per Game (PPG) on a monthly basis, and (b) match results (win, loss, or draw) on a weekly basis, and if so, are there any significant differences between these relationships?
 
+
+RQ3: Using multinomial logistic regression analysis, how do the probabilities of (a) match outcomes (win, loss, or draw) on a weekly basis and (b) Points per Game categories (High, Medium, Low) on a monthly basis differ across sentiment categories (High, Medium, Low) of tweets related to football matches?
+RQ4: Are there any significant relationship differences between different periods in the sentiment categories (High, Medium, Low) and (a) Points per Game (b) match outcomes (win, loss, or draw)?
+
 Research Objectives:
 
 To evaluate the performance of different sentiment analysis models on Malafosse's dataset and identify the best model based on accuracy, precision, recall, F1-score, and other evaluation metrics.
