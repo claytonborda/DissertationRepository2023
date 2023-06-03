@@ -1,0 +1,10 @@
+RQ1: How do lexicon-based, traditional machine learning, and deep learning sentiment analysis models differ in their accuracy when analyzing Malafosse’s football related data set?
+RQ2: How do different stopword strategies (e.g., NLTK stop words, customized stop words, and no stop words) impact the performance of sentiment analysis football-related tasks?
+RQ3: How does the positivity rate of tweets relate with match-winning probabilities, as assessed through Logistic Regression?
+RQ4: What is the correlation between the Positive Sentiment Score and the Points Per Game (PPG) achieved by teams, and how does this relationship evolve over the course of a football season?
+
+Hypotheses:
+H1: There are significant differences in accuracy among lexicon-based, traditional machine learning, and deep learning sentiment analysis models when applied to Malafosse’s football-related dataset.
+H2: Different stopword strategies will have a significant impact on the performance of sentiment analysis models in football-related sentiment analysis tasks.
+H3: The increase in positive percentage is directly proportional to the increase in winning probability.
+H4: The relationship between positive sentiment on social media, specifically Twitter, and football team performance strengthens as the season progresses, with increased positive sentiment generally corresponding to higher Points Per Game (PPG).
